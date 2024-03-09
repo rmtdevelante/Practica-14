@@ -1,0 +1,237 @@
+/* Establece el tamaño de fondo de la página y la imagen de fondo */
+body {
+    background-size: cover; /* La imagen de fondo se ajusta para cubrir todo el cuerpo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-image: url(../Imagenes/fondo.jpg); /* Establece la imagen de fondo */
+}
+
+/* Estilos para el encabezado */
+h1 {
+    color: #fff; /* Establece el color del texto del encabezado */
+}
+
+/* Estilos para los párrafos */
+p {
+    color: #fff; /* Establece el color del texto de los párrafos */
+}
+
+/* Estilos para la consola */
+.console {
+    width: 500px; /* Establece el ancho de la consola */
+    height: 500px; /* Establece la altura de la consola */
+    border: 5px solid #000; /* Establece el borde de la consola */
+    border-radius: 20%; /* Establece el radio de borde de la consola */
+    position: relative; /* Establece la posición relativa */
+    overflow: hidden; /* Oculta el desbordamiento de contenido */
+    display: block; /* Muestra la consola como un bloque */
+    margin-left: auto; /* Centra la consola horizontalmente */
+    margin-right: auto; /* Centra la consola horizontalmente */
+    margin-top: 70px; /* Establece el margen superior */
+    align-items: center; /* Centra verticalmente el contenido */
+    background-image: url("../Imagenes/madera.jpg"); /* Establece la imagen de fondo de la consola */
+    background-size: cover; /* La imagen de fondo se ajusta para cubrir toda la consola */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+}
+
+/* Estilos para el vinilo */
+.vinilo {
+    width: 400px; /* Establece el ancho del vinilo */
+    height: 400px; /* Establece la altura del vinilo */
+    background-color: #333; /* Establece el color de fondo del vinilo */
+    border-radius: 50%; /* Establece el radio de borde del vinilo */
+    position: absolute; /* Establece la posición absoluta */
+    display: block; /* Muestra el vinilo como un bloque */
+    margin-left: 55px; /* Establece el margen izquierdo */
+    margin-top: 55px; /* Establece el margen superior */
+}
+
+/* Estilos para el álbum */
+.album {
+    width: 250px; /* Establece el ancho del álbum */
+    height: 250px; /* Establece la altura del álbum */
+    background-color: red; /* Establece el color de fondo del álbum */
+    border-radius: 15%; /* Establece el radio de borde del álbum */
+    position: relative; /* Establece la posición relativa */
+    margin-left: auto; /* Centra el álbum horizontalmente */
+    margin-right: auto; /* Centra el álbum horizontalmente */
+    margin-top: -315px; /* Establece el margen superior */
+    background-image: url("album.png"); /* Establece la imagen de fondo del álbum */
+    background-size: cover; /* La imagen de fondo se ajusta para cubrir todo el álbum */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+}
+
+/* Estilos para el agujero del vinilo */
+.agujero {
+    width: 20px; /* Establece el ancho del agujero */
+    height: 20px; /* Establece la altura del agujero */
+    background-color: black; /* Establece el color de fondo del agujero */
+    border-radius: 50%; /* Establece el radio de borde del agujero */
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%; /* Establece la posición superior */
+    left: 50%; /* Establece la posición izquierda */
+    transform: translate(-50%, -50%); /* Centra el agujero */
+}
+
+/* Estilos para la línea */
+.linea1 {
+    background-color: #fff; /* Establece el color de fondo de la línea */
+    border-radius: 50%; /* Establece el radio de borde de la línea */
+    position: relative; /* Establece la posición relativa */
+    top: 50%; /* Establece la posición superior */
+    left: 50%; /* Establece la posición izquierda */
+    transform: translate(-50%, -50%); /* Centra la línea */
+}
+
+/* Animación para girar */
+@keyframes girar {
+    from {
+        transform: rotate(0deg); /* Transformación inicial */
+    }
+    to {
+        transform: rotate(360deg); /* Transformación final */
+    }
+}
+
+/* Animación para el álbum */
+.album {
+    animation: girar 10s linear infinite; /* Aplica la animación al álbum */
+}
+
+/* Animación para el vinilo */
+.vinilo {
+    animation: girar 10s linear infinite; /* Aplica la animación al vinilo */
+}
+
+/* Estilos para la imagen */
+.imagen {
+    align-items: center; /* Centra verticalmente la imagen */
+    width: 300px; /* Establece el ancho de la imagen */
+    height: 300px; /* Establece la altura de la imagen */
+    border-radius: 50%; /* Establece el radio de borde de la imagen */
+    position: relative; /* Establece la posición relativa */
+    top: 50%; /* Establece la posición superior */
+    left: 50%; /* Establece la posición izquierda */
+    transform: translate(-50%, -50%); /* Centra la imagen */
+}
+
+/* Estilos para las bocinas */
+.bocina1, .bocina2 {
+    background-color: black; /* Establece el color de fondo de las bocinas */
+    border-radius: 15%; /* Establece el radio de borde de las bocinas */
+    width: 250px; /* Establece el ancho de las bocinas */
+    height: 250px; /* Establece la altura de las bocinas */
+    display: flex; /* Establece el contenedor de flexión */
+    align-items: center; /* Centra verticalmente las bocinas */
+    justify-content: center; /* Centra horizontalmente las bocinas */
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%; /* Establece la posición superior */
+    border: 1px solid white; /* Establece el borde de las bocinas */
+}
+
+/* Estilos para la bocina 1 */
+.bocina1 {
+    left: 60px; /* Mueve la bocina hacia la izquierda */
+}
+
+/* Estilos para la bocina 2 */
+.bocina2 {
+    right: 60px; /* Mueve la bocina hacia la derecha */
+}
+
+/* Estilos para la línea de las bocinas */
+.linea-bocina1, .linea-bocina2 {
+    background-color: yellow; /* Establece el color de fondo de la línea de las bocinas */
+    border-radius: 50%; /* Establece el radio de borde de la línea de las bocinas */
+    width: 150px; /* Establece el ancho de la línea de las bocinas */
+    height: 150px; /* Establece la altura de la línea de las bocinas */
+    display: flex; /* Establece el contenedor de flexión */
+    align-items: center; /* Centra verticalmente la línea de las bocinas */
+    border: 1px solid white; /* Establece el borde de la línea de las bocinas */
+}
+
+/* Estilos para la aguja */
+.aguja {
+    width: 8px; /* Establece el ancho de la aguja */
+    height: 200px; /* Establece la altura de la aguja */
+    background-color: #000; /* Establece el color de fondo de la aguja */
+    position: absolute; /* Establece la posición absoluta */
+    top: 60%; /* Establece la posición superior */
+    left: 50%; /* Establece la posición izquierda */
+    transform-origin: bottom center; /* Establece el origen de la transformación */
+    z-index: 2; /* Establece el índice z para que esté sobre los otros elementos */
+    animation: none; /* Desactiva la animación */
+}
+
+/* Estilos para la aguja dentro del vinilo */
+.vinilo .aguja {
+    transform: translate(-50%, -50%) rotate(90deg); /* Rotación de la aguja dentro del vinilo */
+}
+
+/* Estilos para pantallas con un ancho máximo de 800px */
+@media screen and (max-width: 800px) {
+    .linea1 {
+        top: 10%; /* Establece la posición superior */
+        left: 10%; /* Establece la posición izquierda */
+        align-items: center; /* Centra verticalmente la línea */
+        transform: translate(-5%, -5%); /* Centra la línea */
+        width: 1px; /* Establece el ancho de la línea */
+        height: 10px; /* Establece la altura de la línea */
+    }
+
+    .console {
+        width: 20px; /* Establece el ancho de la consola */
+        height: 20px; /* Establece la altura de la consola */
+        margin-top: 20px; /* Establece el margen superior */
+    }
+
+    .vinilo {
+        width: 5px; /* Establece el ancho del vinilo */
+        height: 5px; /* Establece la altura del vinilo */
+        margin: 1px auto; /* Establece los márgenes */
+    }
+
+    .bocina1, .bocina2 {
+        width: 100px; /* Establece el ancho de las bocinas */
+        height: 100px; /* Establece la altura de las bocinas */
+        margin-top: 10px; /* Establece el margen superior */
+    }
+
+    .aguja {
+        width: 4px; /* Establece el ancho de la aguja */
+        height: 100px; /* Establece la altura de la aguja */
+    }
+
+    .linea-bocina1, .linea-bocina2 {
+        width: 50px; /* Establece el ancho de la línea de las bocinas */
+        height: 50px; /* Establece la altura de la línea de las bocinas */
+        margin-top: 5px; /* Establece el margen superior */
+    }
+
+    /* Estilos para el encabezado en pantallas pequeñas */
+    h1 {
+        width: 15px; /* Establece el ancho del encabezado */
+        height: 15px; /* Establece la altura del encabezado */
+        margin-top: 5px; /* Establece el margen superior */
+        text-align: center; /* Centra el texto horizontalmente */
+    }
+
+    /* Estilos para los párrafos en pantallas pequeñas */
+    p {
+        width: 10px; /* Establece el ancho del párrafo */
+        height: 10px; /* Establece la altura del párrafo */
+        margin-top: 5px; /* Establece el margen superior */
+        text-align: center; /* Centra el texto horizontalmente */
+    }
+
+    /* Estilos para el agujero en pantallas pequeñas */
+    .agujero {
+        width: 5px; /* Establece el ancho del agujero */
+        height: 5px; /* Establece la altura del agujero */
+        background-color: black; /* Establece el color de fondo del agujero */
+        border-radius: 50%; /* Establece el radio de borde del agujero */
+        position: absolute; /* Establece la posición absoluta */
+        top: 50%; /* Establece la posición superior */
+        left: 50%; /* Establece la posición izquierda */
+        transform: translate(-50%, -50%); /* Centra el agujero */
+    }
+}
